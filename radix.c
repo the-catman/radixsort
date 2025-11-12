@@ -13,7 +13,7 @@ int radixSort(uint32_t **arrPtr, const size_t len) {
     uint32_t *count = malloc(BASE * sizeof(uint32_t));
 
     if (!output || !count) {
-        return 1; // Allocation failed
+        return -1; // Allocation failed
     }
 
     uint32_t max = arr[0];
